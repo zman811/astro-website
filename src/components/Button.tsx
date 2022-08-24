@@ -5,8 +5,8 @@ export default function Button() {
 
   return (
     <div>
-      <button onClick={() => setClicked(clicked + 1)}>Test! {clicked}</button>
-      <button onClick={() => setClicked(0)}>reset</button>
+      <a style={{margin: '1em'}} href="#" role="button" onClick={() => setClicked(clicked + 1)}>Test! {clicked}</a>
+      <a href="#" role="button" onClick={() => setClicked(0)}>Reset</a>
     </div>
   );
 }
