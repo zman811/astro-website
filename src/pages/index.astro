@@ -1,12 +1,20 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Button from '../components/Button'
+import Navbar	from '../components/Navbar'
 ---
 
 <Layout title="Welcome">
-	<main>
-		<h1>Welcome to a Website!</h1>
-		<Button client:load />
-		<a href="/test">test</a>
+	<main class="center">
+		<Navbar />
+		<h1>Welcome Zachs Website!</h1>
+		<Button client:idle />
 	</main>
 </Layout>
+
+<style>
+		.center {
+		margin: auto;
+		text-align: center;
+		}
+</style>
