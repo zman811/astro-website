@@ -5,8 +5,14 @@ import Navbar	from '../components/Navbar'
 ---
 
 <Layout title="Welcome">
+	<ul>
+		<li><a href="default.asp">Home</a></li>
+		<li><a href="news.asp">News</a></li>
+		<li><a href="contact.asp">Contact</a></li>
+		<li><a href="about.asp">About</a></li>
+	</ul>
 	<main class="center">
-		<Navbar />
+		<!-- <Navbar /> -->
 		<h1>Welcome Zachs Website!</h1>
 		<Button client:idle />
 	</main>
@@ -17,4 +23,29 @@ import Navbar	from '../components/Navbar'
 		margin: auto;
 		text-align: center;
 		}
+		ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: #111;
+}
+
 </style>
